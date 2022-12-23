@@ -1,8 +1,8 @@
 import '@reach/dialog/styles.css'
 import * as React from 'react'
-import {createRoot} from 'react-dom/client'
-import {Dialog} from '@reach/dialog'
-import {Logo} from './components/logo'
+import { createRoot } from 'react-dom/client'
+import { Dialog } from '@reach/dialog'
+import { Logo } from './components/logo'
 
 function App() {
   const [openModal, setOpenModal] = React.useState('none')
@@ -35,4 +35,4 @@ function App() {
 
 const root = createRoot(document.getElementById('root'))
 root.render(<App />)
-export {root}
+export { root }

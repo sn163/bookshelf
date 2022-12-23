@@ -1,13 +1,13 @@
 import '@reach/dialog/styles.css'
 import * as React from 'react'
-import {createRoot} from 'react-dom/client'
-import {Dialog} from '@reach/dialog'
-import {Logo} from './components/logo'
+import { createRoot } from 'react-dom/client'
+import { Dialog } from '@reach/dialog'
+import { Logo } from './components/logo'
 
-function LoginForm({onSubmit, buttonText}) {
+function LoginForm({ onSubmit, buttonText }) {
   function handleSubmit(event) {
     event.preventDefault()
-    const {username, password} = event.target.elements
+    const { username, password } = event.target.elements
 
     onSubmit({
       username: username.value,
@@ -73,4 +73,4 @@ function App() {
 
 const root = createRoot(document.getElementById('root'))
 root.render(<App />)
-export {root}
+export { root }
